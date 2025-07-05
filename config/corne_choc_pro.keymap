@@ -74,10 +74,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp ESCAPE         &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT NUMBER_5  &none  &none  &mt CARET NUMBER_6  &mt AMPERSAND NUMBER_7  &mt ASTRK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &mt RIGHT_PARENTHESIS NUMBER_0  &kp LA(BSPC)
-&kp LA(BACKSPACE)  &trans                    &trans                &trans             &kp LEFT_ALT         &trans                &none  &none  &kp LEFT_ARROW      &kp DOWN_ARROW          &kp UP_ARROW        &kp RIGHT_ARROW                &trans                          &trans
-&kp LSHFT          &trans                    &trans                &trans             &trans               &trans                              &trans              &trans                  &trans              &trans                         &trans                          &trans
-                                                                   &kp LGUI           &trans               &kp SPACE                           &kp LGUI            &mo 3                   &kp SPACE
+&kp ESCAPE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none  &none  &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &trans
+&kp LA(BACKSPACE)  &trans        &trans        &trans        &kp LEFT_ALT  &trans        &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans        &trans
+&kp LSHFT          &trans        &trans        &trans        &trans        &trans                      &trans          &trans          &trans        &trans           &trans        &trans
+                                               &kp LGUI      &trans        &kp SPACE                   &kp LGUI        &mo 3           &kp SPACE
             >;
         };
 
