@@ -58,7 +58,7 @@
 
             bindings = <
 &kp ESCAPE     &kp Q  &kp W  &kp F         &kp P  &kp B      &kp C_MUTE  &kp C_PP  &kp J    &kp L  &kp U              &kp Y             &kp SEMICOLON  &kp BSPC
-&kp BACKSPACE  &kp A  &kp R  &kp S         &kp T  &kp G      &kp LALT    &kp RALT  &kp M    &kp N  &hmr E LEFT_SHIFT  &hmr I RIGHT_ALT  &kp O          &kp SQT
+&kp BACKSPACE  &kp A  &kp R  &kp S         &kp T  &kp G      &kp LALT    &kp RALT  &kp M    &kp N  &hmr LEFT_SHIFT E  &hmr RIGHT_ALT I  &kp O          &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C         &kp D  &kp V                            &kp K    &kp H  &kp COMMA          &kp DOT           &kp FSLH       &kp TAB
                              &kp LEFT_GUI  &mo 1  &kp SPACE                        &kp RET  &mo 2  &kp RALT
             >;
