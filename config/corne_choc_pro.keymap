@@ -23,7 +23,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <230>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-key-positions = <40 41 42 43 44 45 7 21 22 34 8 9 10 11 12 13 27 26 25 24 23 35 36 37 38 39>;
@@ -37,21 +37,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <230>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-key-positions = <43 44 45 40 41 42 0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 40 41 42>;
             hold-trigger-on-release;
             require-prior-idle-ms = <150>;
-        };
-    };
-
-    macros {
-        repeat_GRAVE: repeat_GRAVE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER>;
-            label = "REPEAT_GRAVE";
         };
     };
 
@@ -69,7 +60,7 @@
 
             bindings = <
 &kp ESCAPE     &kp Q        &kp W        &kp F          &kp P         &kp B      &kp C_MUTE  &kp C_PP  &kp J    &kp L         &kp U          &kp Y        &kp SEMICOLON  &kp BSPC
-&kp BACKSPACE  &hml LGUI A  &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G      &kp LALT    &kp RALT  &kp M    &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O    &hmr LC(B) APOSTROPHE
+&kp BACKSPACE  &hml LGUI A  &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G      &kp LALT    &kp RALT  &kp M    &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O    &kp APOS
 &kp LSHFT      &kp Z        &kp X        &kp C          &kp D         &kp V                            &kp K    &kp H         &kp COMMA      &kp DOT      &kp FSLH       &kp TAB
                                          &kp LEFT_GUI   &mo 1         &kp SPACE                        &kp RET  &mo 2         &kp RALT
             >;
@@ -85,10 +76,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5  &none  &none  &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0  &kp RA(BACKSPACE)
-&kp LA(BACKSPACE)  &trans        &trans        &kp MINUS     &kp LEFT_ALT   &trans        &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans        &repeat_GRAVE
-&kp LSHFT          &trans        &trans        &trans        &kp LG(SPACE)  &trans                      &trans          &trans          &trans         &trans           &trans        &trans
-                                               &kp LGUI      &trans         &kp SPACE                   &kp LGUI        &mo 3           &kp RIGHT_ALT
+&kp TAB            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5   &none  &none  &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0  &kp RA(BACKSPACE)
+&kp LA(BACKSPACE)  &trans        &trans        &kp MINUS     &kp LEFT_ALT   &trans         &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans        &trans
+&kp LSHFT          &trans        &trans        &trans        &kp LG(SPACE)  &kp LC(SPACE)                &trans          &trans          &trans         &trans           &trans        &trans
+                                               &kp LGUI      &trans         &kp SPACE                    &kp LGUI        &mo 3           &kp RIGHT_ALT
             >;
         };
 
@@ -103,7 +94,7 @@
 
             bindings = <
 &kp TAB            &kp EXCL   &kp AT  &kp HASH   &kp DLLR          &kp PRCNT  &kp LCTRL  &kp RCTRL  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET  &kp RA(BSPC)
-&kp LA(BACKSPACE)  &kp GRAVE  &trans  &kp EQUAL  &kp GREATER_THAN  &trans     &kp LALT   &kp RALT   &kp MINUS      &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BSLH   &repeat_GRAVE
+&kp LA(BACKSPACE)  &kp GRAVE  &trans  &kp EQUAL  &kp GREATER_THAN  &trans     &kp LALT   &kp RALT   &kp MINUS      &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BSLH   &trans
 &kp LSHFT          &trans     &trans  &kp MINUS  &kp UNDER         &trans                           &kp UNDER      &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE   &kp TILDE
                                       &kp LGUI   &mo 3             &kp SPACE                        &kp RET        &trans        &kp RALT
             >;
