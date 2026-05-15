@@ -69,7 +69,7 @@
 
             bindings = <
 &kp ESCAPE     &kp Q        &kp W        &kp F          &kp P         &kp B      &kp C_MUTE  &kp C_PP  &kp J    &kp L         &kp U          &kp Y        &kp SEMICOLON  &kp BSPC
-&kp BACKSPACE  &hml LGUI A  &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G      &kp LALT    &kp RALT  &kp M    &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr SEMI O    &hmr RIGHT_SHIFT APOSTROPHE
+&kp BACKSPACE  &hml LGUI A  &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp G      &kp LALT    &kp RALT  &kp M    &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O    &hmr LC(B) APOSTROPHE
 &kp LSHFT      &kp Z        &kp X        &kp C          &kp D         &kp V                            &kp K    &kp H         &kp COMMA      &kp DOT      &kp FSLH       &kp TAB
                                          &kp LEFT_GUI   &mo 1         &kp SPACE                        &kp RET  &mo 2         &kp RALT
             >;
